@@ -1,0 +1,10 @@
+{
+    "java.project.sourcePaths": [
+        "Programacion ATS/Java I/Ejercicios_Operadores",
+        "Programacion ATS/Java II/Condicionales",
+        "Programacion ATS/Java II/Ciclos",
+        "Programacion ATS/Java II/Arreglos_Ordenamientos_Busquedas_Matrices",
+        "Programacion ATS/Java III",
+        "Programacion ATS\\Java III\\Programacion_Orientada_A_Objetos\\Basic"
+    ]
+}

@@ -1,0 +1,61 @@
+
+
+
+
+
+
+	CREATE TABLE Personas(
+
+P_id integer PRIMARY KEY AUTOINCREMENT,
+Nombre text(20) NOT NULL, /*NOT NULL = el campo no puede estár vacio*/
+Apellidos text(20),
+Direccion text(40),
+Ciudad text(30)
+
+);
+
+/*Consultas*/
+
+INSERT INTO Personas(Nombre,Apellidos,Direccion,Ciudad)
+VALUES ("Stiven","Diaz","Calle 8 #15-14","Santa Marta");
+
+INSERT INTO Personas(Nombre,Apellidos,Direccion,Ciudad)
+VALUES ("Ana","Palomino","Calle 10 #17-14","Santa Marta");
+
+INSERT INTO Personas(Nombre,Apellidos,Direccion,Ciudad)
+VALUES ("Tomás","Arrieta","Avenida 1","Bogotá");
+
+/*
+SELECT = Selecciona las columnas, campos, atributos
+FROM = la o las tablas que voy a relacionar
+WHERE = condicion para que me muestre los datos
+*/
+
+SELECT Nombre, Direccion
+FROM Personas;
+
+SELECT Nombre, Direccion
+FROM Personas
+WHERE Ciudad = "Bogotá";
+
+/*
+Si queremos toda la info
+*/
+SELECT *
+FROM Personas
+WHERE Ciudad = "Bogotá";
+
+/*
+Si queremos actualizar alguna info
+*/
+UPDATE Personas SET Direccion = "Tranv 78"
+Where Nombre = "Tomás";
+
+SELECT *
+FROM Personas;
+
+/*
+Eliminar a alguien
+*/
+DELETE FROM Personas
+WHERE P_id = 3;
